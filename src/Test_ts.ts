@@ -1,0 +1,1 @@
+export const text:string = 'This is test from Test module'
