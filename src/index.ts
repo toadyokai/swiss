@@ -1,5 +1,1 @@
-import { text } from './Test_ts'
-// // console.log( text )
-
-document.write( text )
-
+export { default as Swiss } from "./Swiss"

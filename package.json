@@ -4,25 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "webpack-dev-server --open --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.build.js",
-    "release": "webpack --config ./config/webpack.release.js"
+    "release": "webpack --config ./config/webpack.release.js",
+    "pack": "rollup main.js --file bundle.js --format umd --name 'myBundle'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arfly/scaffold.git"
+    "url": "git+https://github.com/Arfly/swiss.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Arfly/scaffold/issues"
+    "url": "https://github.com/Arfly/swiss/issues"
   },
-  "homepage": "https://github.com/Arfly/scaffold#readme",
+  "homepage": "https://github.com/Arfly/swiss/blob/master/README.md",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^26.1.0",
     "rollup": "^2.18.0",
     "ts-loader": "^4.2.0",
     "typescript": "^2.8.3",
